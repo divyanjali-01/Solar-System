@@ -1,0 +1,177 @@
+body {
+    background-image:url(https://wallpaperaccess.com/full/8684996.jpg);
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+}
+
+.solar-system {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    
+    width: 60px;
+    height: 60px;
+    background-image: url(https://www.pngkey.com/png/full/7-73554_sun-transparent-background-download-sun-clipart-science.png);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 5px 5px rgb(211, 90, 15);
+}
+
+
+.orbit{
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: spin 60s linear infinite;
+}
+
+
+.planet {
+    position: absolute;
+    top: 50%;
+    left:100%;
+    transform: translate(-50%, -50%); 
+    border-radius: 50%;
+}
+
+/* Orbit Sizes */
+.orbit.mercury { 
+    width: 150px; 
+    height: 150px; 
+    animation-duration: 10s; 
+}
+.orbit.venus   { 
+    width: 210px; 
+    height: 210px; 
+    animation-duration: 15s; 
+}
+.orbit.earth   {  
+    width: 290px; 
+    height: 290px; 
+    animation-duration: 20s; 
+}
+.orbit.mars    { 
+    width: 390px; 
+    height: 390px; 
+    animation-duration: 25s; 
+}
+.orbit.jupiter { 
+    width: 510px; 
+    height: 510px; 
+    animation-duration: 30s; 
+}
+.orbit.saturn  {
+    width: 650px; 
+    height: 650px; 
+    animation-duration: 35s; 
+}
+.orbit.uranus  { 
+    width: 810px; 
+    height: 810px; 
+    animation-duration: 40s; 
+}
+.orbit.neptune { 
+    width: 990px; 
+    height: 990px; 
+    animation-duration: 45s; 
+}
+
+/* Planet Colors and Sizes */
+.planet.mercury {
+        width: 14px;
+        height: 14px;
+        background-image: url(https://png.pngtree.com/png-clipart/20190904/original/pngtree-c4d-realistic-simulation-planet-mercury-png-image_4463126.jpg);
+        background-size: cover;
+        border-radius: 50%;
+        position: absolute;
+        z-index:10;
+    }
+.planet.venus   {
+        width: 25px; 
+        height: 25px; 
+        background-image: url(https://cdn.zmescience.com/wp-content/uploads/2021/06/4996207725_d2abf7fca1_k.jpg); 
+        background-size: cover;
+        border-radius: 50%;
+    }
+.planet.earth   {
+        width: 45px; 
+        height: 45px;  
+        background-image: url(https://pngimg.com/uploads/globe/globe_PNG100087.png); 
+        background-size: cover;
+        border-radius: 50%;
+        position:absolute;
+        z-index: 10;
+        
+}
+.planet.mars    {
+        width: 30px; 
+        height: 30px; 
+        background-image: url(https://as2.ftcdn.net/v2/jpg/03/41/22/33/1000_F_341223314_TuiMtFvlAba07hrDA6GX8Hz3Omt5CdZV.jpg); 
+        background-size: cover;
+        border-radius: 50%; 
+    }
+.planet.jupiter {
+        width: 82px; 
+        height: 82px;
+        background-image: url(https://www.pngmart.com/files/22/Jupiter-PNG-Free-Download.png);
+        background-size: cover;
+        border-radius: 50%; 
+    }
+.planet.saturn  {
+        width: 75px;
+        height: 75px;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/030/951/528/original/realistic-saturn-planet-ai-generative-free-png.png); 
+        background-size: cover;
+        
+    }
+.planet.uranus  {
+        width: 70px; 
+        height: 70px;
+        background-image: url(https://png.pngtree.com/png-clipart/20220616/original/pngtree-planet-uranus-png-image_8072427.png); 
+        background-size: cover;
+        border-radius: 50%;
+    }
+.planet.neptune {
+                width: 70px;
+                height: 70px; 
+                background-image: url(https://png.pngtree.com/png-clipart/20230927/original/pngtree-neptune-planet-illustration-png-image_13139500.png);
+                background-size: cover;
+                border-radius: 50%; 
+            }
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.orbit.moon {
+    position: absolute;
+    top:-10px;
+    left:-8px;
+    width:60px;
+    height:60px;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1s linear infinite;
+    animation-duration: 2s;
+
+}
+
+.planet.moon {
+    width: 15px;
+    height: 15px;
+    background-image:url(https://www.pngarts.com/files/2/Full-Moon-PNG-Image.png);
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+
